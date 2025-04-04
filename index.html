@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тетрадка с линии</title>
+    <style>
+      @font-face {
+            font-family: 'Geodos-Regular'; /* Име на шрифта */
+            src: url('fonts/Geodos-Regular.ttf') format('truetype');
+        }
+        body {
+            background: repeating-linear-gradient(white, white 29px, #cce7ff 30px, #cce7ff 31px);
+            /* font-family: Arial, sans-serif; */
+            font-family: 'Geodos-Regular', sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh; /* Височина на цял екран */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .content {
+            position: absolute; /* Фиксира позицията */
+            left: 70px; /* Фиксира разстоянието отляво */
+            top: 0; /* За начало отгоре */
+            height: 100%; /* Занимава цялата височина */
+            width: 70%;
+            padding-left: 10px;
+            border-left: 3px solid hsla(0, 100%, 50%, 0.507); /* Червената линия */
+            box-sizing: border-box;
+        }
+
+        p {
+            font-size: 22px;
+            margin: 0;
+            line-height: 31px; /* Поставя текста между линиите */
+            position: relative;
+            top: 8px; /* Добавя 2 пиксела надолу към текста */
+        }
+        p:first-of-type {
+          text-indent: 3ch;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <p>Това е примерен текст, който е точно между редовете на тетрадката. Можете да добавите още абзаци за съдържание.</p>
+        <p>Всеки абзац ще бъде красиво позициониран между линиите, без да ги настъпва.</p>
+        <p>Имало едно време една машина на времето. Тя се намирала в колибата на един беден рибар. Той живеел в едно богато царство.</p>
+        
+    </div>
+</body>
+</html>
