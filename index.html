@@ -11,6 +11,14 @@
         }
         body {
             background: repeating-linear-gradient(white, white 29px, #cce7ff 30px, #cce7ff 31px);
+
+            /* background-image: Премахва първия ред
+            linear-gradient(white, white 60px),
+            repeating-linear-gradient(white, white 29px, #cce7ff 30px, #cce7ff 31px);
+            background-repeat: no-repeat, repeat;
+            background-position: top, 60px 0;
+            background-size: 100% 60px, 100% 31px; */
+
             /* font-family: Arial, sans-serif; */
             font-family: 'Geodos-Regular', sans-serif;
             margin: 0;
@@ -34,13 +42,14 @@
 
         p {
             font-size: 2rem;
-            margin: 0;
+            margin-top: 0px;
             line-height: 31px; /* Поставя текста между линиите */
             position: relative;
             top: 8px; /* Добавя 2 пиксела надолу към текста */
         }
         p:first-of-type {
           text-indent: 3ch;
+            
         }
     </style>
 </head>
